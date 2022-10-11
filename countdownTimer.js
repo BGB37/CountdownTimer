@@ -25,7 +25,7 @@ if(usersHeading == "") {
 
 // Getting a date from the user. Checking for the invalid inputs and warning the user. If not entered, setting the target date to 01/01/2023.
 var date = prompt("Enter a date with the following format --> mm/dd/yyyy");
-while (date[0] == 1 && date[1] > 2 && date[3] == 3 && date[4] > 1) {
+while (date[0] == 1 && date[1] > 2 || date[3] == 3 && date[4] > 1) {
     alert("Month can not be higher than 12 and day can not be higher than 31.");
      date = prompt("Enter a date with the following format --> mm/dd/yyyy");
 } 
