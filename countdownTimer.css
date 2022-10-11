@@ -20,7 +20,7 @@ body  {
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    gap: 50px;
+    gap: 30px;
 }
 
 /* #heading-container {
@@ -52,3 +52,49 @@ gap: 40px;
     font-size: 1.5rem;
     font-family: 'Orbitron', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        width: auto;
+        height: auto;
+    }
+    body  {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(#FFD372,#FFF7E9);
+    }
+
+    #container {
+        width: 700px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+    
+    #time-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        }
+
+    #heading {
+        font-size: 1.5rem;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .times {
+        font-size: 0.7rem;
+        font-family: 'Orbitron', sans-serif;
+    }
+  }
+
+
